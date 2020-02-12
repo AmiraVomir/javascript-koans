@@ -82,8 +82,13 @@ describe("About Applying What We Have Learnt", function() {
     var ingredientCount = { "{ingredient name}": 0 };
 
     /* chain() together map(), flatten() and reduce() */
-
-    expect(ingredientCount['mushrooms']).toBe(FILL_ME_IN);
+    ingredientCount = _.chain(products)
+                .map(function(product) {return product.ingredients})
+                .flatten()
+                .reduce(function(memo, ingredient) {memo[ingredient] = (memo[ingredient] || 0) +1;
+                return memo;},ingredientCount)
+                .value();
+    expect(ingredientCount['mushrooms']).toBe(2);
   });
 
   /*********************************************************************************/
