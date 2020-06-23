@@ -37,7 +37,7 @@ run KoansRunner.html
 ## Authors
 
 * **David Laing** - *Initial work* - [mrdavidlaing](https://github.com/mrdavidlaing/javascript-koans)
-* **Hieu Ho** - *This fork* - [AmiraVomir](https://github.com/AmiraVomir)
+* **Hieu Ho** - *Initial work* - [hieuhho](https://github.com/hieuhho)
 
 ## License
 
